@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:tai/commonWidgets/iconInCircle.dart';
 import 'package:tai/features/bottomNavBar/presentation/Transactions/transactionsScreen.dart';
 import 'package:tai/features/cards/presentation/cardsListScreen.dart';
@@ -220,7 +219,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Row(
+                    const Row(
                       children: [
                         Icon(
                           Icons.calendar_month_outlined,
@@ -246,7 +245,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 builder: (context) =>
                                     const TransactionsScreen()));
                       },
-                      child: Row(children: [
+                      child: const Row(children: [
                         Text(
                           "More",
                           style:
